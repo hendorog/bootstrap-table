@@ -275,7 +275,7 @@
 
                 if (filterDataType !== null) {
                     filterDataSource = column.filterData.substring(column.filterData.indexOf(':') + 1, column.filterData.length);
-                    selectControl = $('.bootstrap-table-filter-control-' + escapeID(column.field));
+                    selectControl =  $(header).find('.bootstrap-table-filter-control-' + escapeID(column.field));
 
                     addOptionToSelectControl(selectControl, '', '');
                     filterDataType(filterDataSource, selectControl);
